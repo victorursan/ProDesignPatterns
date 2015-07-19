@@ -7,9 +7,18 @@
 //
 
 import UIKit
-class ViewController: UIViewController {
+
+class ProductTableCell: UITableViewCell {
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var stockStepper: UIStepper!
+    @IBOutlet weak var stockField: UITextField!
+}
+
+class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var totalStockLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     var products = [
         (" Kayak", "A boat for one person", "Watersports", 275.0, 10),
@@ -35,5 +44,21 @@ class ViewController: UIViewController {
         let stockTotal = products.reduce(0) {(total, product) -> Int in return total + product.4 }
         totalStockLabel.text = "\( stockTotal) Products in Stock"
     }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return products.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let product = products[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("ProductCell") as! ProductTableCell
+        cell.nameLabel.text = product.0
+        cell.descriptionLabel.text = product.1
+        cell.stockStepper.value = Double(product.4)
+        cell.stockField.text = String(product.4)
+        return cell;
+    }
+    
+    
     
 }
