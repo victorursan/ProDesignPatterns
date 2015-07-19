@@ -13,6 +13,8 @@ class ProductTableCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var stockStepper: UIStepper!
     @IBOutlet weak var stockField: UITextField!
+    
+    var productId: Int?
 }
 
 class ViewController: UIViewController, UITableViewDataSource {
@@ -40,6 +42,31 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func stockLevelDidChange(sender: AnyObject) {
+        if var currentCell = sender as? UIView {
+            while (true) {
+                currentCell = currentCell.superview!
+                if let cell = currentCell as? ProductTableCell {
+                    if let id = cell.productId {
+                        var newStockLevel:Int?
+                        if let stepper = sender as? UIStepper {
+                            newStockLevel = Int(stepper.value)
+                        } else if let textfield = sender as? UITextField, newValue = textfield.text.toInt() {
+                            newStockLevel = newValue
+                        }
+                        if let level = newStockLevel {
+                            products[id].4 = level
+                            cell.stockStepper.value = Double(level)
+                            cell.stockField.text = String(level)
+                        }
+                    }
+                    break
+                }
+            }
+            displayStockTotal()
+        }
+    }
+    
     func displayStockTotal() {
         let stockTotal = products.reduce(0) {(total, product) -> Int in return total + product.4 }
         totalStockLabel.text = "\( stockTotal) Products in Stock"
@@ -52,6 +79,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let product = products[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier("ProductCell") as! ProductTableCell
+        cell.productId = indexPath.row
         cell.nameLabel.text = product.0
         cell.descriptionLabel.text = product.1
         cell.stockStepper.value = Double(product.4)
