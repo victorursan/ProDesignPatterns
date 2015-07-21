@@ -51,7 +51,8 @@ class ViewController: UIViewController, UITableViewDataSource {
                         var newStockLevel:Int?
                         if let stepper = sender as? UIStepper {
                             newStockLevel = Int(stepper.value)
-                        } else if let textfield = sender as? UITextField, newValue = textfield.text.toInt() {
+                        } else if let textfield = sender as? UITextField,
+                            newValue = textfield.text.toInt() {
                             newStockLevel = newValue
                         }
                         if let level = newStockLevel {
@@ -69,7 +70,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func displayStockTotal() {
         let stockTotal = products.reduce(0) {(total, product) -> Int in return total + product.4 }
-        totalStockLabel.text = "\( stockTotal) Products in Stock"
+        totalStockLabel.text = "\(stockTotal) Products in Stock"
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
