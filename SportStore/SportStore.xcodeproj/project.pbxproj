@@ -14,6 +14,7 @@
 		574B9ED01B5BC2C20038B927 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 574B9ECE1B5BC2C20038B927 /* LaunchScreen.xib */; };
 		574B9EDC1B5BC2C20038B927 /* SportStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574B9EDB1B5BC2C20038B927 /* SportStoreTests.swift */; };
 		574B9EE61B5ED1EF0038B927 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574B9EE51B5ED1EF0038B927 /* Utils.swift */; };
+		574B9EE81B5ED3AC0038B927 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574B9EE71B5ED3AC0038B927 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		574B9EDA1B5BC2C20038B927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		574B9EDB1B5BC2C20038B927 /* SportStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportStoreTests.swift; sourceTree = "<group>"; };
 		574B9EE51B5ED1EF0038B927 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		574B9EE71B5ED3AC0038B927 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				574B9EE51B5ED1EF0038B927 /* Utils.swift */,
 				574B9EC51B5BC2C20038B927 /* AppDelegate.swift */,
+				574B9EE71B5ED3AC0038B927 /* Product.swift */,
 				574B9EC71B5BC2C20038B927 /* ViewController.swift */,
 				574B9EC91B5BC2C20038B927 /* Main.storyboard */,
 				574B9ECC1B5BC2C20038B927 /* Images.xcassets */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				574B9EC81B5BC2C20038B927 /* ViewController.swift in Sources */,
+				574B9EE81B5ED3AC0038B927 /* Product.swift in Sources */,
 				574B9EC61B5BC2C20038B927 /* AppDelegate.swift in Sources */,
 				574B9EE61B5ED1EF0038B927 /* Utils.swift in Sources */,
 			);
