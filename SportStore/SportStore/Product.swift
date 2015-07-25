@@ -8,10 +8,10 @@
 
 import Foundation
 
-class Product {
+class Product: NSObject, NSCopying{
     
     private(set) var name: String
-    private(set) var description: String
+    private(set) var productDescription: String
     private(set) var category: String
     private(set) var price: Double {
         get { return priceBackingValue}
@@ -31,10 +31,17 @@ class Product {
     
     init(name: String, description: String, category: String, price: Double, stockLevel: Int) {
         self.name = name
-        self.description = description
+        self.productDescription = description
         self.category = category
+
+        super.init()
+        
         self.price = price
         self.stockLevel = stockLevel
+    }
+    
+    func copyWithZone(zone: NSZone) -> AnyObject {
+        return Product(name: name, description: productDescription, category: category, price: price, stockLevel: stockLevel)
     }
     
 }
