@@ -16,6 +16,7 @@
 		574B9EE61B5ED1EF0038B927 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574B9EE51B5ED1EF0038B927 /* Utils.swift */; };
 		574B9EE81B5ED3AC0038B927 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574B9EE71B5ED3AC0038B927 /* Product.swift */; };
 		574B9EEA1B63CEA70038B927 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574B9EE91B63CEA70038B927 /* Logger.swift */; };
+		5797522F1B64E827006BEAED /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5797522E1B64E827006BEAED /* NetworkConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		574B9EE51B5ED1EF0038B927 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		574B9EE71B5ED3AC0038B927 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		574B9EE91B63CEA70038B927 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		5797522E1B64E827006BEAED /* NetworkConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				574B9EC51B5BC2C20038B927 /* AppDelegate.swift */,
 				574B9EE71B5ED3AC0038B927 /* Product.swift */,
 				574B9EE91B63CEA70038B927 /* Logger.swift */,
+				5797522E1B64E827006BEAED /* NetworkConnection.swift */,
 				574B9EC71B5BC2C20038B927 /* ViewController.swift */,
 				574B9EC91B5BC2C20038B927 /* Main.storyboard */,
 				574B9ECC1B5BC2C20038B927 /* Images.xcassets */,
@@ -223,6 +226,7 @@
 			files = (
 				574B9EEA1B63CEA70038B927 /* Logger.swift in Sources */,
 				574B9EC81B5BC2C20038B927 /* ViewController.swift in Sources */,
+				5797522F1B64E827006BEAED /* NetworkConnection.swift in Sources */,
 				574B9EE81B5ED3AC0038B927 /* Product.swift in Sources */,
 				574B9EC61B5BC2C20038B927 /* AppDelegate.swift in Sources */,
 				574B9EE61B5ED1EF0038B927 /* Utils.swift in Sources */,
@@ -423,6 +427,7 @@
 				574B9EE11B5BC2C20038B927 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		574B9EE21B5BC2C20038B927 /* Build configuration list for PBXNativeTarget "SportStoreTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +436,7 @@
 				574B9EE41B5BC2C20038B927 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
