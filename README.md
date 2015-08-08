@@ -29,12 +29,18 @@ In this part, I made the Logger a singleton and fixed any possible concurrency i
 *Caution: concurrency -> dispatch_asyn, dispatch_sync, queue and others
 *branch: TheSingletonPattern
 
-5. TheObjectPoolPattern
------------------------
+5. The Object Pool Pattern
+--------------------------
 In this part, I made NetworkConnection and NetworkPool to simulate a server and a ProductDataStore to store all the products
 *Ideea: Simillarly with the Singleton Pattern but in this case, we have more than one resource, but a finite amount
 *Caution: Singleton.Caution + possible semaphores
 *branch: TheObjectPoolPattern
 
+6. Object Pool Variation
+------------------------
+In this part, I changed from the eager strategy to the lazy strategy got the NetworkPool, which means that I create a new network connection only if one is not available 
+*Ideea: Understanding the Object Creation Strategy, Object Reuse Strategy, Empty Pool Strategy, Allocation Strategy, Expectaton Gap Pitfall and Over- and Under utilization Pitfalls of the pattern
+*Caution: Pool.Caution + knowing when the pattern may cause more harm than good
+*branch: ObjectPoolVariations
 
 
