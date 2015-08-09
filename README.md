@@ -38,9 +38,14 @@ In this part, I made NetworkConnection and NetworkPool to simulate a server and 
 
 6. Object Pool Variation
 ------------------------
-In this part, I changed from the eager strategy to the lazy strategy got the NetworkPool, which means that I create a new network connection only if one is not available 
+In this part, I changed from the eager strategy to the lazy strategy on the NetworkPool, which means that I create a new network connection only if one is not available 
 *Ideea: Understanding the Object Creation Strategy, Object Reuse Strategy, Empty Pool Strategy, Allocation Strategy, Expectaton Gap Pitfall and Over- and Under utilization Pitfalls of the pattern
 *Caution: Pool.Caution + knowing when the pattern may cause more harm than good
 *branch: ObjectPoolVariations
 
-
+7. The Factory Pattern
+----------------------
+In this part, I added 2 product types that conform to the Product class and made the Product class be able to create the other 2 classes
+*Ideea: Make the same type of objects conform to the same protocol or base class
+*Caution: Careful with delegating some functionality down the tree
+*branch: TheFactoryMethodPattern
