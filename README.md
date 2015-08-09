@@ -49,3 +49,11 @@ In this part, I added 2 product types that conform to the Product class and made
 *Ideea: Make the same type of objects conform to the same protocol or base class
 *Caution: Careful with delegating some functionality down the tree
 *branch: TheFactoryMethodPattern
+
+8. Abstract Factory Pattern
+---------------------------
+In this part, I added a currency formatter and a converter by creating 2 factories (one for each)
+*Ideea: Make a factorie that manages more than one object
+*Caution: Use this pattern when you have to create objects of the same nature but containt objects of different kind
+*branch: AbstractFactoryPattern
+
