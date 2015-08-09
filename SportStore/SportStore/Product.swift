@@ -51,6 +51,19 @@ class Product: NSObject, NSCopying{
             return Array()
         }
     }
+    
+    class func createProduct(name: String, description: String, category: String, price: Double, stockLevel: Int) -> Product {
+        var productType: Product.Type
+        switch (category) {
+        case "Watersports":
+            productType = WatersportsProduct.self
+        case "Soccer":
+            productType = SoccerProduct.self
+        default:
+            productType = Product.self
+        }
+        return productType(name: name, description: description, category: category, price: price, stockLevel: stockLevel)
+    }
 }
 
 enum UpsellOpportunities {
