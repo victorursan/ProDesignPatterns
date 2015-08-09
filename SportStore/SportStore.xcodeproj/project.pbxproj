@@ -19,6 +19,7 @@
 		5797522F1B64E827006BEAED /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5797522E1B64E827006BEAED /* NetworkConnection.swift */; };
 		579752311B64EC63006BEAED /* NetworkPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579752301B64EC63006BEAED /* NetworkPool.swift */; };
 		579752331B64F4B5006BEAED /* ProductDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579752321B64F4B5006BEAED /* ProductDataStore.swift */; };
+		57E1AB7B1B77F2A300522762 /* StockValueImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1AB7A1B77F2A300522762 /* StockValueImplementations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		5797522E1B64E827006BEAED /* NetworkConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
 		579752301B64EC63006BEAED /* NetworkPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkPool.swift; sourceTree = "<group>"; };
 		579752321B64F4B5006BEAED /* ProductDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDataStore.swift; sourceTree = "<group>"; };
+		57E1AB7A1B77F2A300522762 /* StockValueImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockValueImplementations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				574B9EE71B5ED3AC0038B927 /* Product.swift */,
 				574B9EE91B63CEA70038B927 /* Logger.swift */,
 				579752321B64F4B5006BEAED /* ProductDataStore.swift */,
+				57E1AB7A1B77F2A300522762 /* StockValueImplementations.swift */,
 				5797522E1B64E827006BEAED /* NetworkConnection.swift */,
 				579752301B64EC63006BEAED /* NetworkPool.swift */,
 				574B9EC71B5BC2C20038B927 /* ViewController.swift */,
@@ -237,6 +240,7 @@
 				574B9EE81B5ED3AC0038B927 /* Product.swift in Sources */,
 				574B9EC61B5BC2C20038B927 /* AppDelegate.swift in Sources */,
 				574B9EE61B5ED1EF0038B927 /* Utils.swift in Sources */,
+				57E1AB7B1B77F2A300522762 /* StockValueImplementations.swift in Sources */,
 				579752311B64EC63006BEAED /* NetworkPool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
