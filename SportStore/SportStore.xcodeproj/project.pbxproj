@@ -20,6 +20,7 @@
 		579752311B64EC63006BEAED /* NetworkPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579752301B64EC63006BEAED /* NetworkPool.swift */; };
 		579752331B64F4B5006BEAED /* ProductDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579752321B64F4B5006BEAED /* ProductDataStore.swift */; };
 		57E1AB7B1B77F2A300522762 /* StockValueImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1AB7A1B77F2A300522762 /* StockValueImplementations.swift */; };
+		57E1AB7D1B77F42700522762 /* StockValueFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1AB7C1B77F42700522762 /* StockValueFactories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		579752301B64EC63006BEAED /* NetworkPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkPool.swift; sourceTree = "<group>"; };
 		579752321B64F4B5006BEAED /* ProductDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDataStore.swift; sourceTree = "<group>"; };
 		57E1AB7A1B77F2A300522762 /* StockValueImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockValueImplementations.swift; sourceTree = "<group>"; };
+		57E1AB7C1B77F42700522762 /* StockValueFactories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockValueFactories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				574B9EE91B63CEA70038B927 /* Logger.swift */,
 				579752321B64F4B5006BEAED /* ProductDataStore.swift */,
 				57E1AB7A1B77F2A300522762 /* StockValueImplementations.swift */,
+				57E1AB7C1B77F42700522762 /* StockValueFactories.swift */,
 				5797522E1B64E827006BEAED /* NetworkConnection.swift */,
 				579752301B64EC63006BEAED /* NetworkPool.swift */,
 				574B9EC71B5BC2C20038B927 /* ViewController.swift */,
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				574B9EEA1B63CEA70038B927 /* Logger.swift in Sources */,
+				57E1AB7D1B77F42700522762 /* StockValueFactories.swift in Sources */,
 				579752331B64F4B5006BEAED /* ProductDataStore.swift in Sources */,
 				574B9EC81B5BC2C20038B927 /* ViewController.swift in Sources */,
 				5797522F1B64E827006BEAED /* NetworkConnection.swift in Sources */,
