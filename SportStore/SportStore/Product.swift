@@ -20,20 +20,22 @@ class Product: NSObject, NSCopying{
     
     private var stockLevelBackingValue: Int = 0
     private var priceBackingValue: Double = 0
+    private var salesTaxRate: Double = 0.2
     
     var stockLevel: Int {
         get { return stockLevelBackingValue}
         set { stockLevelBackingValue = max(0, newValue)}
     }
+    
     var stockValue: Double {
-        get { return price * Double(stockLevel)}
+        get { return (price * (1 + salesTaxRate)) * Double(stockLevel) }
     }
     
-    init(name: String, description: String, category: String, price: Double, stockLevel: Int) {
+    required init(name: String, description: String, category: String, price: Double, stockLevel: Int) {
         self.name = name
         self.productDescription = description
         self.category = category
-
+        
         super.init()
         
         self.price = price
@@ -44,4 +46,39 @@ class Product: NSObject, NSCopying{
         return Product(name: name, description: productDescription, category: category, price: price, stockLevel: stockLevel)
     }
     
+    var upsells: [UpsellOpportunities] {
+        get {
+            return Array()
+        }
+    }
 }
+
+enum UpsellOpportunities {
+    case SwimmingLessons
+    case MapOfLakes
+    case SoccerVideos
+}
+
+class WatersportsProduct: Product {
+    required init(name: String, description: String, category: String, price: Double, stockLevel: Int) {
+        super.init(name: name, description: description, category: category, price: price, stockLevel: stockLevel)
+        salesTaxRate = 0.1;
+    }
+    
+    override var upsells: [UpsellOpportunities] {
+        return [.SwimmingLessons, .MapOfLakes]
+    }
+}
+
+class SoccerProduct: Product {
+    required init(name: String, description: String, category: String, price: Double, stockLevel: Int) {
+        super.init(name: name, description: description, category: category, price: price, stockLevel: stockLevel)
+        salesTaxRate = 0.25;
+    }
+    
+    override var upsells: [UpsellOpportunities] {
+        return [.SoccerVideos]
+    }
+}
+
+
