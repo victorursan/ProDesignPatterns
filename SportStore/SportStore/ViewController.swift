@@ -70,12 +70,15 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func displayStockTotal() {
-        let finalTotals:(Int, Double) = productStore.products.reduce(( 0, 0.0)) {
-            ( totals, product) -> (Int, Double) in
-            return ( totals.0 + product.stockLevel, totals.1 + product.stockValue )
+        let finalTotals:(Int, Double) = productStore.products.reduce((0, 0.0)) {
+            (totals, product) -> (Int, Double) in
+            return (totals.0 + product.stockLevel, totals.1 + product.stockValue )
         }
-        totalStockLabel.text = "\(finalTotals.0) Products in Stock" +
-        " Total Value \(Utils.currencyStringFromNumber(finalTotals.1))"
+        
+        var factory = StockTotalFactory.getFactory(StockTotalFactory.Currency.GBP)
+        var totalAmount = factory.converter?.convertTotal(finalTotals.1)
+        var formatted = factory.formatter?.formatTotal(totalAmount!)
+        totalStockLabel.text = "\(finalTotals.0) Products in Stock. " + "Total Value: \(formatted!)";
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
