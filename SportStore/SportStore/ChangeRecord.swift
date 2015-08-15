@@ -26,7 +26,7 @@ class ChangeRecord: Printable {
     var description: String {
         get {
             return "<\(outerTag)> <\(innerTag) name =\"\(productName)\" category =\"\(catName)\">" +
-            "\(value) </\(innerTag)> </\(outerTag)>"
+            "\(value)</\(innerTag)> </\(outerTag)>"
         }
     }
 }

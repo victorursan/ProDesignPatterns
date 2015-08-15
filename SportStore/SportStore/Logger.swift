@@ -8,7 +8,18 @@
 
 import Foundation
 
-let productLogger = Logger<Product>(callback:{(product: Product) in println("Change: \(product.name) \(product.stockLevel) items in stock")})
+let productLogger = Logger<Product>(callback: {
+    (product: Product) in
+    var builder = ChangeRecordBuilder()
+    builder.productName = product.name
+    builder.category = product.category
+    builder.value = String(product.stockLevel)
+    builder.outerTag = "stockChange"
+    
+    if let changeRecord = builder.changeRecord {
+        println(changeRecord)
+    }
+})
 
 final class Logger<T where T:NSObject, T:NSCopying> {
     var dataItems:[T] = []
