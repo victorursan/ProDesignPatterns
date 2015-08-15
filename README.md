@@ -71,3 +71,9 @@ In this part, I added a ChangeRecord module with a ChangeRecord class and a Chan
 **II - The Structural Patterns
 ------------------------------
 
+10. The Adapter Pattern
+-----------------------
+In this part, I added an Euro Handler and considered it as an inaccessible class and with the use of the Adapter pattern made it like the other 2 currency
+*Ideea: If you have 2 or more classes that have the same or similar scope but different api, adapt one to the other with an extension or with a wraper
+*Caution: don't adapt classes that don't have the same purpose 
+*branch: TheAdapterPattern
