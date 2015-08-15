@@ -21,6 +21,7 @@
 		579752331B64F4B5006BEAED /* ProductDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579752321B64F4B5006BEAED /* ProductDataStore.swift */; };
 		57E1AB7B1B77F2A300522762 /* StockValueImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1AB7A1B77F2A300522762 /* StockValueImplementations.swift */; };
 		57E1AB7D1B77F42700522762 /* StockValueFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1AB7C1B77F42700522762 /* StockValueFactories.swift */; };
+		57E1AB811B7F3F2C00522762 /* ChangeRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1AB801B7F3F2C00522762 /* ChangeRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		579752321B64F4B5006BEAED /* ProductDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDataStore.swift; sourceTree = "<group>"; };
 		57E1AB7A1B77F2A300522762 /* StockValueImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockValueImplementations.swift; sourceTree = "<group>"; };
 		57E1AB7C1B77F42700522762 /* StockValueFactories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockValueFactories.swift; sourceTree = "<group>"; };
+		57E1AB801B7F3F2C00522762 /* ChangeRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				574B9ECC1B5BC2C20038B927 /* Images.xcassets */,
 				574B9ECE1B5BC2C20038B927 /* LaunchScreen.xib */,
 				574B9EC31B5BC2C20038B927 /* Supporting Files */,
+				57E1AB801B7F3F2C00522762 /* ChangeRecord.swift */,
 			);
 			path = SportStore;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				574B9EC81B5BC2C20038B927 /* ViewController.swift in Sources */,
 				5797522F1B64E827006BEAED /* NetworkConnection.swift in Sources */,
 				574B9EE81B5ED3AC0038B927 /* Product.swift in Sources */,
+				57E1AB811B7F3F2C00522762 /* ChangeRecord.swift in Sources */,
 				574B9EC61B5BC2C20038B927 /* AppDelegate.swift in Sources */,
 				574B9EE61B5ED1EF0038B927 /* Utils.swift in Sources */,
 				57E1AB7B1B77F2A300522762 /* StockValueImplementations.swift in Sources */,
