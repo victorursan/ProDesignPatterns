@@ -3,6 +3,10 @@ README
 
 In this folder I'll be going step by step from the Chapter 3 forwards with the patterns and projects from the book Pro Design Patterns in Swift by Adam Freeman.
 
+
+**I - The Creation Patterns
+-------------------------
+
 1. Creating an Unstructured iOS App Project
 -------------------------------------------
 In this part, I, with the help of the book, will create a basic iOS App Project with no specific pattern or structure
@@ -26,7 +30,7 @@ In this part, I created a Logger and made the Product class copyable, conform th
 ------------------------
 In this part, I made the Logger a singleton and fixed any possible concurrency issues that it may incounter
 *Ideea: Create a global instance of the class or better said, only one instance of the object may exist in the app.
-*Caution: concurrency -> dispatch_asyn, dispatch_sync, queue and others
+*Caution: concurrency -> dispatch_async, dispatch_sync, queue and others
 *branch: TheSingletonPattern
 
 5. The Object Pool Pattern
@@ -56,4 +60,14 @@ In this part, I added a currency formatter and a converter by creating 2 factori
 *Ideea: Make a factorie that manages more than one object
 *Caution: Use this pattern when you have to create objects of the same nature but containt objects of different kind
 *branch: AbstractFactoryPattern
+
+9. The Builder Pattern
+----------------------
+In this part, I added a ChangeRecord module with a ChangeRecord class and a ChangeRecordBuilder that creates the desired object. With does 2 I changed the Logger.
+*Ideea: For a class that in use has general value for some properties, create a builder to manage them and not the class or the caller.
+*Caution: when objects are in general different from each other (all properties and so on), don't use this pattern
+*branch: TheBuilderPattern
+
+**II - The Structural Patterns
+------------------------------
 
