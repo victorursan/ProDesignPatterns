@@ -9,7 +9,6 @@
 import Foundation
 
 class EuroHandler {
-    
     func getDisplaytring(amount: Double) -> String {
         let formater = Utils.currencyStringFromNumber(amount)
         return "€\(dropFirst(formater))"

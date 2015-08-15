@@ -9,7 +9,6 @@
 import Foundation
 
 class Product: NSObject, NSCopying{
-    
     private(set) var name: String
     private(set) var productDescription: String
     private(set) var category: String
@@ -93,5 +92,3 @@ class SoccerProduct: Product {
         return [.SoccerVideos]
     }
 }
-
-

@@ -20,7 +20,6 @@ class ProductTableCell: UITableViewCell {
 var handler = {(product: Product) in println("Change: \(product.name) \(product.stockLevel) items in stock")}
 
 class ViewController: UIViewController, UITableViewDataSource {
-    
     @IBOutlet weak var totalStockLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     var productStore = ProductDataStore()
@@ -75,7 +74,7 @@ class ViewController: UIViewController, UITableViewDataSource {
             return (totals.0 + product.stockLevel, totals.1 + product.stockValue )
         }
         
-        var factory = StockTotalFactory.getFactory(StockTotalFactory.Currency.GBP)
+        var factory = StockTotalFactory.getFactory(StockTotalFactory.Currency.EUR)
         var totalAmount = factory.converter?.convertTotal(finalTotals.1)
         var formatted = factory.formatter?.formatTotal(totalAmount!)
         totalStockLabel.text = "\(finalTotals.0) Products in Stock. " + "Total Value: \(formatted!)";
