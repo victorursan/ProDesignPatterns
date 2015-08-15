@@ -65,7 +65,7 @@ In this part, I added a currency formatter and a converter by creating 2 factori
 ----------------------
 In this part, I added a ChangeRecord module with a ChangeRecord class and a ChangeRecordBuilder that creates the desired object. With does 2 I changed the Logger.
 *Ideea: For a class that in use has general value for some properties, create a builder to manage them and not the class or the caller.
-*Caution: when objects are in general different from each other (all properties and so on), don't use this pattern
+*Caution: When objects are in general different from each other (all properties and so on), don't use this pattern
 *branch: TheBuilderPattern
 
 **II - The Structural Patterns
@@ -75,5 +75,14 @@ In this part, I added a ChangeRecord module with a ChangeRecord class and a Chan
 -----------------------
 In this part, I added an Euro Handler and considered it as an inaccessible class and with the use of the Adapter pattern made it like the other 2 currency
 *Ideea: If you have 2 or more classes that have the same or similar scope but different api, adapt one to the other with an extension or with a wraper
-*Caution: don't adapt classes that don't have the same purpose 
+*Caution: Don't adapt classes that don't have the same purpose 
 *branch: TheAdapterPattern
+
+11. The Bridge Pattern
+----------------------
+In this part, I added an EventBridge class to separate the input callback from the output callback of the app
+*Ideea: It's applied to the exploding class hierarchy problem, create a bridge class ties other classes together
+*Caution: don't use it if you need the bridge just for a specific job, in that case Collapse the Bridge
+*branch: TheBridgePattern
+
+
