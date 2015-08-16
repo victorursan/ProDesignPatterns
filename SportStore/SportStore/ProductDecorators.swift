@@ -33,7 +33,7 @@ class LowStockIncreaseDecorator: PriceDecorator {
     }
 }
 
-class DecreaseSoccerDecorator: PriceDecorator {
+class SoccerDecreaseDecorator: PriceDecorator {
     override var price: Double {
         return wrappedProduct.price * 0.5
     }

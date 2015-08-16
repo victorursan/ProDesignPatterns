@@ -20,7 +20,11 @@ final class ProductDataStore {
     }
     
     private func loadData() -> [Product]{
-        productData.map{(product: Product) -> () in
+        return productData.map{(p: Product) -> (Product) in
+            var product: Product = LowStockIncreaseDecorator(product: p)
+            if (product.category == "Soccer") {
+                product = SoccerDecreaseDecorator(product: product)
+            }
             dispatch_async(self.networkQ){
                 let stockConn = NetworkPool.getConnection()
                 if let level = stockConn.getStockLevel(product.name) {
@@ -33,8 +37,8 @@ final class ProductDataStore {
                 }
                 NetworkPool.returnConnecton(stockConn)
             }
+            return product
         }
-        return productData
     }
     
     private var productData: [Product] = [
