@@ -91,3 +91,10 @@ In this part, I added a ProductDecorator module with decorators for the price su
 *Ideea: Create a base decorateor to initialize a wrapper of the product to be decorated, and each decorateor will inherit from it and overrite the necesary elements 
 *Caution: try to keep the decorator for a single purpose
 *branch: TheDecoratorPattern
+
+13. The Composite Pattern
+-------------------------
+
+*Ideea:
+*Caution:
+*branch:
