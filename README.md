@@ -85,4 +85,9 @@ In this part, I added an EventBridge class to separate the input callback from t
 *Caution: don't use it if you need the bridge just for a specific job, in that case Collapse the Bridge
 *branch: TheBridgePattern
 
-
+12. The Decorator Pattern
+-------------------------
+In this part, I added a ProductDecorator module with decorators for the price such that if there are less than 4 items, the price is higher or if the item is in the soccer category, the item is cheaper
+*Ideea: Create a base decorateor to initialize a wrapper of the product to be decorated, and each decorateor will inherit from it and overrite the necesary elements 
+*Caution: try to keep the decorator for a single purpose
+*branch: TheDecoratorPattern
